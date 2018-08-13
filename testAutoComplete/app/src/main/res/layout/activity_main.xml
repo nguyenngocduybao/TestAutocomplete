@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập tên:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/txtTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/tvNoiSinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nơi sinh:"
+        android:textSize="30sp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoTinhThanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Xác nhận nơi sinh" />
+
+    <TextView
+        android:id="@+id/tvThongTin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thông tin hiển thị"
+        android:textSize="30sp" />
+</LinearLayout>
